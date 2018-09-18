@@ -23,8 +23,8 @@ def register():
             return 'Invalid Email adress'
         elif len(d) < 6:
             return 'Password must be longer than 6 chars'
-        elif list(set_d & set_special) == []:
-            return 'Password must contain special chars'
+        elif list(set_d & set_special) == [] or [char for char in d if char.isupper()] == []:
+            return 'Password must contain special chars and uppercase letters'
 
         print(a, b, c, d)
 
