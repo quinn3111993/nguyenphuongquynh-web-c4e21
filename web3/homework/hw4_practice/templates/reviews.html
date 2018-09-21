@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reviews</title>
+</head>
+<body>
+    <button><a href="{{ url_for('new_review') }}">New review</a></button>
+    <br>
+    <div>
+        {% for review in reviews %}
+        <p><b>Review author: </b>{{ review.author }}</p>
+        <p><b>Song title: </b>{{ review.song }}</p>
+        <p><b>Artist name: </b>{{ review.artist }}</p>
+        <p><b>Review content: </b></p>
+        <p>{{ review.content }}</p>
+        <button><a href="/review/{{review.id}}">Read more</a></button>
+        <br><br>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

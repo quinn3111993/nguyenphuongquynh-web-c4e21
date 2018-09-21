@@ -25,4 +25,25 @@ def test_load_data():
         print(post.author)
         print('----------')
 
-test_load_data()
+def delete_one_data(post_id):
+    #1. Get document
+    post = Post.objects().with_id(post_id)
+
+    #2. Delete document
+    if post is None:
+        print('Post not found')
+    else:
+        post.delete()
+
+def update_one(post_id, new_title):
+    #1. Get document
+    post = Post.objects().with_id(post_id)
+
+    #2. Update
+    if post is None:
+        print('Post not found')
+    else:
+        #Slug
+        post.update(set__title=new_title)
+
+update_one('5b9cd22ff4fba09861ab7003', 'New new title')

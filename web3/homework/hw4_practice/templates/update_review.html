@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update review</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="">Your name</label><br>
+        <input type="text" name="author" value="{{ review.author }}"><br>
+
+        <label for="">Song title</label><br>
+        <input type="text" name="song" value="{{ review.song }}"><br>
+
+        <label for="">Artist name</label><br>
+        <input type="text" name="artist" value="{{ review.artist }}"><br>
+
+        <label for="">Your review</label><br>
+        <textarea name="content" id="" cols="30" rows="10">{{ review.content }}</textarea><br>
+
+        <button>Update</button><br>
+    </form>
+</body>
+</html>

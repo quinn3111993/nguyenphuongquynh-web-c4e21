@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review</title>
+</head>
+<body>
+    <p><b>Review author: </b>{{ review.author }}</p>
+    <p><b>Song title: </b>{{ review.song }}</p>
+    <p><b>Artist name: </b>{{ review.artist }}</p>
+    <p><b>Review content: </b></p>
+    <p>{{ review.content }}</p>
+    <button><a href="/delete/{{review.id}}">Delete</a></button>
+    <button><a href="/update/{{review.id}}">Update</a></button>
+    <button><a href="/reviews">Back</a></button>
+    <br>
+    
+</body>
+</html>
