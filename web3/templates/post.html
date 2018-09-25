@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/index.css">
     <title>Document</title>
 </head>
 <body>
-    <h3>{{ post.title }}</h3>
-    <div>{{ post.author }}</div>
-    <p>{{ post.content }}</p>
-    
-    <a href="/delete/{{post.id}}">
-    <span>Delete</span>
-    </a>
+    <div id="cover-post">
+    </div>
     <br>
+    
+    <div id="post-detail">
+        <h1>{{ post.title }}</h1>
+        <h3>by {{ post.author }}</h3>
+        <br>
+        <p>{{ post.content }}</p>
+        <div id="post-button">
+            <button>
+                <a href="/posts">Go back</a>
+            </button>
 
-    <a href="/update/{{post.id}}">
-    <span>Update</span>
-    </a>
+            <button>
+                <a href="/delete/{{post.id}}">Delete</a>
+            </button>
+
+            <button>
+                <a href="/update/{{post.id}}">Update</a>
+            </button>
+        </div>
+         
+    </div>
+    
+
     <br><br>
 </body>
 </html>

@@ -4,28 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/index.css">
     <title>Posts</title>
 </head>
-<body>
-    <a href="{{ url_for('new_post') }}">Add new post</a>
-    <br><br>
+<body class="bg-color">
+    <div id="cover">
+        <div class="new-post">
+            <span id="header">
+                My Blog
+            </span>
+            <br>
+            <button id="add-new-post">
+                <a href="{{ url_for('new_post') }}">
+                    Add new post
+                </a>
+            </button>
+            
+        </div> 
+    </div>
+    <br>
+
     <div>
         {% for post in posts %}
-            <div>
-                <a href="/post/{{post.id}}">
+            <div class="post">
+                <a class="title" href="/post/{{post.id}}">
                 <span>{{ post.title }}</span>
                 </a>
-                <span>by {{ post.author }}</span>
+                <span class="author">by {{ post.author }}</span>
                 <br>
 
-                <a href="/delete/{{post.id}}">
-                <span>Delete</span>
-                </a>
+                <p id="content">
+                    <span>{{post.content[:150]}}...</span>  
+                </p>
                 <br>
+                
+                <button>
+                    <a href="/post/{{post.id}}">View</a>
+                </button>
+                
+                <button>
+                    <a href="/delete/{{post.id}}">Delete</a>
+                </button>
 
-                <a href="/update/{{post.id}}">
-                <span>Update</span>
-                </a>
+                <button>
+                    <a href="/update/{{post.id}}">Update</a>
+                </button>
                 <br><br>
             </div>
         {% endfor %}

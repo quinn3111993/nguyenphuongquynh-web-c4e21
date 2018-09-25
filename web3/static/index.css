@@ -1,0 +1,130 @@
+.bg-color {
+    background-color: gray;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(185, 68, 25);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-style: italic;
+    color:  rgb(5, 85, 74);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input, textarea {
+    background-color: rgb(240, 234, 234);
+}
+
+label {
+    color: rgb(122, 38, 7);
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(5, 88, 75);
+}
+
+.button {
+    color: white;
+}
+
+.margin {
+    margin: 25px 25px 25px 25px;
+}
+
+#cover {
+    background-image: url(http://colorfully.eu/wp-content/uploads/2012/10/empty-road-highway-with-fog-facebook-cover.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.new-post {
+    text-decoration: none;
+    padding-top: 50px;
+    color: rgb(5, 88, 75);
+}
+
+#header {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#add-new-post {
+    font-size: 18px;
+    background-color: rgb(122, 38, 7);
+    border-radius: 5px;
+    border-color: white;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.post {
+    background-color: white;
+    color: white;
+    height: cover;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 25px 5px 25px;
+}
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(161, 47, 5);
+    text-decoration: none;
+}
+
+.author {
+    color: rgb(5, 88, 75);
+    font-style: italic;
+}
+
+#content {
+    color: rgb(29, 28, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+
+/* post details */
+
+
+#cover-post {
+    background-image: url(https://i.pinimg.com/564x/ef/6a/9d/ef6a9de394b0e8abbc1c2430bffc1d48.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#post-detail {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#post-button {
+    text-align: center;
+}

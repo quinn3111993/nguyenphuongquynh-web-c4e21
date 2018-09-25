@@ -1,0 +1,97 @@
+h4 {
+    color: teal;    
+}
+
+h5 {
+    color: orange;
+}
+
+#last_title {
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.bg-blue {
+    text-decoration: none;
+}
+
+.text-decor {
+    text-decoration: underline;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* fill, contain, none, cover */
+}
+
+#container {
+    background-image: url(http://colorfully.eu/wp-content/uploads/2012/10/empty-road-highway-with-fog-facebook-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: none;
+    background-attachment: fixed;
+}
+
+.bg-red {
+    background-color: #880808;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+body, html {
+    height: 100%;
+}
+
+.h-100p {
+    height: 100px;
+}
+
+.w-200p {
+    width: 200px;
+}
+
+.h-10 {
+    height: 10%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mb-10p {
+    margin-bottom: 10px;
+}
+
+.m-20p {
+    margin: 20px;
+}
+
+.mc {
+    margin: 10px 5px 10px 7px;
+}
+
+.pt-16p {
+    padding-top: 16px;
+}
+
+.pl-8p {
+    padding-left: 8px;
+}
+
+.b-c {
+    /* border-color: black;
+    border-width: 2px;
+    border-style: solid; */
+    border: 2px black solid;
+    /* border-radius: 10px; */
+    border-radius: 100%;
+}

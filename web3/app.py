@@ -5,6 +5,10 @@ from post import Post
 app = Flask(__name__)
 mlab.connect()
 
+@app.route('/')
+def home():
+    return redirect('/posts')
+
 @app.route('/post/<post_id>')
 def post(post_id):
     all_posts = Post.objects()
@@ -33,7 +37,8 @@ def update(post_id):
         c = form['content']
         print(t, a, c)  
         #2. Update new post
-        post.update(set__title=t, set__author=a, set__content=c)
+        post.update(set__title=t, set__author=a, set__content=c) #inc_likes #push__
+        #post.reload()
     return redirect('/post/'+post_id)
 
 @app.route('/posts')
